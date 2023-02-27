@@ -19,10 +19,7 @@ function Code() {
         highlight={code => highlight(code, languages.js, "javascript")}
         padding={25}
         style={{
-          color: "white",
-          backgroundColor: "#292929"
         }}
-        preClassName="editor"
       />
     </div>
   );

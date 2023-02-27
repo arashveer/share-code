@@ -1,12 +1,14 @@
 const express = require("express");
 const router = express.Router();
+const db = require("../queries");
 
 /*  POST req for new codefile to server
     REQUIRES:
     RETURN: row from db
 */
 router.post("/create", (req, res) => {
-    res.send("Save to table here");
+    console.log(req.body);
+    db.createCode(req, res);
 });
 
 router
